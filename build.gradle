@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: 'eclipse'
+
+group 'airwallex'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                'Main-Class': 'com.airwallex.calculator.CalculatorApplication'
+        )
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
