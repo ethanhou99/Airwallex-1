@@ -6,8 +6,10 @@ Reverse Polish notation calculator is developed using functional programming asp
 
 # Usage
 ```Bash
-java -jar build/libs/AirwallexAssignment-1.0-SNAPSHOT.jar
+java -jar build/libs/Airwallex-1.0-SNAPSHOT.jar
 ```
+
+Use Ctrl + C to exit
 
 ```Command line
 1 2 3 4 5
